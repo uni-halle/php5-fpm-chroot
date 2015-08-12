@@ -8,8 +8,9 @@ BINDIR =	/usr/local/sbin
 MANDIR =	/usr/local/man
 CC =		cc
 CFLAGS =	-O -ansi -pedantic -U__STRICT_ANSI__ -Wall -Wpointer-arith -Wshadow -Wcast-qual -Wcast-align -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wno-long-long
-LDFLAGS =	-s -static
-LDLIBS =	$(SYSV_LIBS)
+LDFLAGS =       -lm
+#LDFLAGS =	-s -static
+#LDLIBS =	$(SYSV_LIBS)
 
 CC :=		$(DIET) $(CC)
 
